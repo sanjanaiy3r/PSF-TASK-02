@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transfer Money</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Transfer Money</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="history.html">Transaction History</a>
+            <a href="https://thesparksfoundationsingapore.org/">TheSparksFoundation</a>
+        </nav>
+    </header>
+
+    <section class="transfer">
+        <h3>Sender: <span id="sender-name"></span></h3>
+        <form id="transfer-form">
+            <label for="receiver">Select Receiver:</label>
+            <select id="receiver"></select>
+            
+            <label for="amount">Amount (INR):</label>
+            <input type="number" id="amount" required>
+            
+            <button type="submit">Confirm Transfer</button>
+        </form>
+        
+        <div id="result"></div>
+    </section>
+
+    <script src="transfer.js"></script>
+</body>
+</html>
